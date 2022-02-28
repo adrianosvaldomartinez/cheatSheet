@@ -9,7 +9,7 @@
 // obvaimente en estos metodos no puedo usar this, poruqe no se crea una nueva clase
 
 // una variable no definida retorna null
-class utilities {
+class utilidades {
 
     // metodos y propiedades estaticos que se pueden llamar sin instanciar clase
     // static properties and methods
@@ -35,12 +35,13 @@ class utilities {
     public static void main (String[] args) {
 
         System.out.println("Hello, World.");
-       System.out.println(utilities.getNombre());
-       utilities.setNombre("David de metodos y propiedades estaticas");
-       System.out.println(utilities.getNombre());
+       System.out.println(utilidades.getNombre());
+       utilidades.setNombre("David de metodos y propiedades estaticas");
+       System.out.println(utilidades.getNombre());
+    //    Porque funciona sin si siquiera llamar a la clase estatica?
        System.out.println(getNombre());
         // Instancio la clase
-        utilities utilitiesI = new utilities();
+        utilidades utilitiesI = new utilidades();
         utilitiesI.setApellido("Martinez de metodos y propiedades de instancia");
         System.out.println(utilitiesI.getApellido());
  
