@@ -1,3 +1,6 @@
+// las clases las propiedades y los metodos pueden ser estaticos
+// en este archivo se ejemplifica propiedades y metodos estaticos
+
 // si no quiero instanciar nuevas clases para usar los metodos, estos metodos tiene que ser estaticos
 //  Static methods are often used to create utility functions for an application,
 //  whereas static properties are useful for caches, fixed-configuration, 
@@ -6,7 +9,7 @@
 // obvaimente en estos metodos no puedo usar this, poruqe no se crea una nueva clase
 
 // una variable no definida retorna null
-class QuickStart {
+class utilities {
 
     // metodos y propiedades estaticos que se pueden llamar sin instanciar clase
     // static properties and methods
@@ -30,14 +33,16 @@ class QuickStart {
 
     
     public static void main (String[] args) {
+
         System.out.println("Hello, World.");
-       System.out.println(getNombre());
-       setNombre("David de metodos y propiedades estaticas");
+       System.out.println(utilities.getNombre());
+       utilities.setNombre("David de metodos y propiedades estaticas");
+       System.out.println(utilities.getNombre());
        System.out.println(getNombre());
         // Instancio la clase
-        QuickStart test = new QuickStart();
-        test.setApellido("Martinez de metodos y propiedades de instancia");
-        System.out.println(test.getApellido());
+        utilities utilitiesI = new utilities();
+        utilitiesI.setApellido("Martinez de metodos y propiedades de instancia");
+        System.out.println(utilitiesI.getApellido());
  
     }
 }
