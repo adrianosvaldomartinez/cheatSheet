@@ -18,7 +18,7 @@ public class initialFile {
         System.out.println(utilidades.getNombre() );
         
 
-        ArrayList<Integer> listaEdades = new ArrayList<Integer>();
+        ArrayList<Integer> listaEdades = new ArrayList<>();
 
         listaEdades.add(1000);
         listaEdades.add(2000);
